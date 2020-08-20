@@ -1,0 +1,61 @@
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<style>
+		/* nunito-sans-italic - latin_latin-ext */
+		@font-face {
+			font-family: 'Nunito Sans';
+			font-style: italic;
+			font-weight: 400;
+			src: local('Nunito Sans Italic'), local('NunitoSans-Italic'),
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-italic.woff @encoding=dataURI}) format('woff2'),
+				/* Chrome 26+, Opera 23+, Firefox 39+ */
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-italic.woff @encoding=dataURI}) format('woff');
+			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		}
+
+		/* nunito-sans-regular - latin_latin-ext */
+		@font-face {
+			font-family: 'Nunito Sans';
+			font-style: normal;
+			font-weight: 400;
+			src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-regular.woff2 @encoding=dataURI}) format('woff2'),
+				/* Chrome 26+, Opera 23+, Firefox 39+ */
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-regular.woff @encoding=dataURI}) format('woff');
+			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		}
+
+		/* nunito-sans-800 - latin_latin-ext */
+		@font-face {
+			font-family: 'Nunito Sans';
+			font-style: normal;
+			font-weight: 800;
+			src: local('Nunito Sans ExtraBold'), local('NunitoSans-ExtraBold'),
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-800.woff2 @encoding=dataURI}) format('woff2'),
+				/* Chrome 26+, Opera 23+, Firefox 39+ */
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-800.woff @encoding=dataURI}) format('woff');
+			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		}
+
+		/* nunito-sans-800italic - latin_latin-ext */
+		@font-face {
+			font-family: 'Nunito Sans';
+			font-style: italic;
+			font-weight: 800;
+			src: local('Nunito Sans ExtraBold Italic'), local('NunitoSans-ExtraBoldItalic'),
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-800italic.woff2 @encoding=dataURI}) format('woff2'),
+				/* Chrome 26+, Opera 23+, Firefox 39+ */
+				url({#asset src/views/fonts/nunito-sans-v5-latin_latin-ext-800italic.woff @encoding=dataURI}) format('woff');
+			/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		}
+
+		* {
+			font-family: 'Nunito Sans', sans-serif
+		}
+	</style>
+
+	<link href="<%- process.cwd() + '/src/views/styles/style.css' %>" rel="stylesheet" type="text/css">
+	<link href="<%- process.cwd() + '/src/views/styles/bootstrap-grid.min.css' %>" rel="stylesheet" type="text/css">
+</head>
