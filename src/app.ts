@@ -43,7 +43,7 @@ app.use('/render', async(req: any, res: any, next: any) => {
 		const generatedPdf = await generatePdf(documentTemplate)
 	
 		res.setHeader('Content-disposition', `inline; filename="docs.pdf"`)
-		
+		global.gc()
 		return generatedPdf.stream.pipe(res)
 		// return res.json()
 	} catch (error) {

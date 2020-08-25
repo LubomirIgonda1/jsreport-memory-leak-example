@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env TS_NODE_FILES=true NODE_ENV=development node --inspect -r ts-node/register src/index.ts"
+    "start": "cross-env TS_NODE_FILES=true NODE_ENV=development node --expose-gc --inspect -r ts-node/register src/index.ts"
   },
   "dependencies": {
     "@types/ejs": "3.0.4",

@@ -8,7 +8,10 @@ import jsreportAssets from 'jsreport-assets'
 const jsReportConfig = {
     config: {
         templatingEngines: {
-            strategy: 'in-process'
+			strategy: 'in-process',
+			templateCache: {
+				enabled: false
+			}
         },
         extensions: {
             'chrome-pdf': {
